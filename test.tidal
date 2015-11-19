@@ -1,3 +1,20 @@
 d1 $ sound (samples "hc*8" (iter 4 $ run 4))
-
+d1 $ sound "bd sn"
 t1 anticipate $ sound (samples "bd(3,8)" (run 3))
+d1 $ sound "bd sn sn"
+   # vowel "a o e"
+   # pan "0 0.5 1"
+d1 $ sound "[bd sn sn] sn"
+d1 $ sound "[bd sn sn] [cp cp]"
+d1 $ sound "[bd bd] [bd [sn [sn sn] sn] sn]"
+d1 $ sound "[bd bd bd, sn cp sn cp]"
+d1 $ sound "{bd ht lt, sn cp}"
+d1 $ sound "{bd [ht sn, lt mt ht] lt, sn cp}"
+d1 $ sound "[bd sn sn*3]/2 [bd sn*3 bd*4]/3"
+d1 $ sound "[bd bd] [bd [sn [sn sn] sn] sn]"
+   # pan sinewave1
+   # shape sinewave1
+d1 $ rev (sound "[bd bd] [bd [sn [sn sn] sn] sn]")
+d1 $ every 4 (rev) (sound "bd*2 [bd [sn sn*2 sn] sn]")
+d1 $ density 4 $ sound "bd*2 [bd [sn sn*2 sn] sn]"
+d1 $ sound "can(5,8,2)"
