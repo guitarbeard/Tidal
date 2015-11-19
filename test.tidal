@@ -1,0 +1,3 @@
+d1 $ sound (samples "hc*8" (iter 4 $ run 4))
+
+t1 anticipate $ sound (samples "bd(3,8)" (run 3))
